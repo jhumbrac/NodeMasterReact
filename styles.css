@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yatra+One&display=swap');
+*,*:before, *:after {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+body {
+    background: #000;
+    color: #fff;
+    line-height:1.3;
+}
+p {
+    margin: 1em 0 0;
+}
+#home {
+    background: url(../img/rooms/titleBackground.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:#fff;
+    min-height: 100vh;
+    text-align: center;
+}
+.titlePage {
+    position: absolute;
+    bottom: 4em;
+    margin: 0;
+    width: 100%;
+    z-index: 1;
+}
+#startGame, #newGame{
+    animation: fadeIn 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes fadeIn {
+  0% { color: rgba(255,255,255,1) }
+  50% { color: rgba(255,255,255,.25) }
+  100% { color: rgba(255,255,255,1) }
+}
+h1 {
+    color: rgb(241, 90, 34);
+    font-family: 'Yatra One', cursive;
+    font-size: 10vw;
+    text-shadow: 1px 1px 2px rgba(0,0,0,1), 0.05em 0.05em rgba(251,176,52, 1), .06em .06em 2px rgba(0,0,0,1), 0.1em 0.1em rgba(246, 139, 51, 1), .011em .011em 2px rgba(0,0,0,1);
+}
+.charSelect .charOverlay {
+    display: block;
+}
+.charOverlay {
+    display: none;
+    width: 80%;
+    background: #222;
+    margin: auto;
+    border: 2px solid;
+    padding: 4em 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 2;
+}
+.selectChar {
+    width: calc(33.33% - 12px);
+    border-bottom: .25em solid rgba(0,0,0,0);
+    max-width: 20em;
+    display: none;
+    vertical-align: bottom;
+    padding: 2em;
+}
+.selectChar:nth-of-type(1), .selectChar:nth-of-type(2), .selectChar:nth-of-type(3) {
+    display:inline-block;
+}
+.selectChar:hover, .selectChar:focus {
+    border-bottom: .25em solid white;
+}
+.selectChar img {
+    width: 50%;
+}
+.selectChar ul {
+    list-style:none;
+}
+.stats {
+    margin: 2em 0 1em;
+}
+.selectChar li {
+    margin-top: .5em;
+}
+.stats li {
+    width: 50%;
+    float: left;
+    padding: .25em 1em;
+    text-align: right;
+}
+.stats span {
+    float:left;
+    font-size: .75em;
+}
+.selectChar h3 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.selectChar h4 {
+    display:inline-block;
+    text-transform: capitalize;
+}
+
+
+/* Game UI */
+.charInfo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 33.33%;
+    padding: 1em;
+    border: 1px solid;
+    z-index: 2;
+    background: rgba(0,0,0,.75);
+}
+.charInfo img {
+    height: 100%;
+    display: block;
+    float: right;
+}
+.charInfo div {
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5));
+    padding-top: 2em;
+}
+.charInfo h3 {
+    text-transform: capitalize;
+    font-size: 2em;
+}
+.charInfo progress, .monster progress {
+    height: 1.25em;
+    width: 100%;
+    margin: 5px -6px;
+    background: black;
+}
+#roomDisplay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 66.66%;
+    z-index: 1;
+}
+.damage {
+    background:url(../img/splat.png) center center no-repeat;
+    background-size:cover;
+    position:absolute;
+    top:1em;
+    left:1em;
+    height:100px;
+    width:100px;
+}
+.damage span {
+    font-size:.75em;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.room {
+    background: url(../img/rooms/room.png) center center no-repeat;
+    background-size: cover;
+}
+.room1 {
+    background: url(../img/rooms/room1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.room2 {
+    background: url(../img/rooms/room2.jpg) center center no-repeat;
+    background-size: cover;
+}
+.room3 {
+    background: url(../img/rooms/room3.jpg) center center no-repeat;
+    background-size: cover;
+}
+.room4 {
+    background: url(../img/rooms/room4.jpg) center center no-repeat;
+    background-size: cover;
+}
+.room5 {
+    background: url(../img/rooms/room5.jpg) center center no-repeat;
+    background-size: cover;
+}
+.treasureRoom {
+    background: url(../img/rooms/treasureRoom.jpg) center center no-repeat;
+    background-size:cover;
+}
+.escape {
+    background: url(../img/rooms/outdoors.jpg) center center no-repeat;
+    background-size:cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.dead {
+    background: url(../img/rooms/dead.jpg) center center no-repeat;
+    background-size:cover;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.credits {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    transition: top 20s !important;
+    transition-timing-function: linear !important;
+}
+.credits h1 {
+    margin-bottom:1em;
+}
+.ending {
+    margin:auto;
+    max-width:600px;
+    width:80%;
+}
+.credits h2 {
+    margin-top: 50vh;
+}
+.credit-titles {
+    margin-top: 8em;
+}
+#newGame {
+    font-size:2em;
+    margin-top: 70vh;
+}
+.credits.scroll {
+    position: absolute;
+    top: -7900px;
+}
+#textBlock {
+    background:black;
+    border: 1px solid;
+    height: 33.33%;
+    padding: 2em 4em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 66.66%;
+    z-index: 2;
+}
+#textBlock label {
+    display:block;
+    margin: 1em 0 0 -1em;
+}
+#textBlock span {
+    display: inline-block;
+    padding: 0 0 .5em;
+}
+
+.monster {
+    position: absolute;
+    right: 5%;
+    bottom: 0em;
+    top: 2em;
+}
+.monster h2 {
+    font-size:2em;
+    letter-spacing:1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+}
+.monster img {
+    height: 100%;
+    float: right;
+}
+.monsterStats {
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+}
+#titleScore {
+    position: fixed;
+    top: 0;
+    right: -16em;
+}
+#battleScore {
+    position: relative;
+    z-index: 1;
+}
+
+.clearfix:after {
+    content:"";
+    clear:both;
+    display:block;
+    height:0;
+}
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      height: 100vw;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+    body {
+        font-size: .5em;
+    }
+}  
+@media only screen and (max-width: 1000px){
+    body {
+        font-size: .5em;
+    }
+ }
+ 
