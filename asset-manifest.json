@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/NodeMasterReact/static/css/main.edb05f4b.chunk.css",
-    "main.js": "/NodeMasterReact/static/js/main.b841e7cf.chunk.js",
-    "main.js.map": "/NodeMasterReact/static/js/main.b841e7cf.chunk.js.map",
+    "main.js": "/NodeMasterReact/static/js/main.f23d2e7a.chunk.js",
+    "main.js.map": "/NodeMasterReact/static/js/main.f23d2e7a.chunk.js.map",
     "runtime-main.js": "/NodeMasterReact/static/js/runtime-main.433a0e52.js",
     "runtime-main.js.map": "/NodeMasterReact/static/js/runtime-main.433a0e52.js.map",
     "static/js/2.509ccce5.chunk.js": "/NodeMasterReact/static/js/2.509ccce5.chunk.js",
     "static/js/2.509ccce5.chunk.js.map": "/NodeMasterReact/static/js/2.509ccce5.chunk.js.map",
     "index.html": "/NodeMasterReact/index.html",
-    "precache-manifest.7989cfbee8a761ab7923fe40b5ac91ab.js": "/NodeMasterReact/precache-manifest.7989cfbee8a761ab7923fe40b5ac91ab.js",
+    "precache-manifest.a2d7a4b8bab9885badf5dde1e363291a.js": "/NodeMasterReact/precache-manifest.a2d7a4b8bab9885badf5dde1e363291a.js",
     "service-worker.js": "/NodeMasterReact/service-worker.js",
     "static/css/main.edb05f4b.chunk.css.map": "/NodeMasterReact/static/css/main.edb05f4b.chunk.css.map",
     "static/js/2.509ccce5.chunk.js.LICENSE.txt": "/NodeMasterReact/static/js/2.509ccce5.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.433a0e52.js",
     "static/js/2.509ccce5.chunk.js",
     "static/css/main.edb05f4b.chunk.css",
-    "static/js/main.b841e7cf.chunk.js"
+    "static/js/main.f23d2e7a.chunk.js"
   ]
 }
