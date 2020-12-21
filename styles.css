@@ -152,7 +152,7 @@ h1 {
     z-index: 1;
 }
 .damage {
-    background:url(../img/splat.png) center center no-repeat;
+    background:url(../../img/splat.png) center center no-repeat;
     background-size:cover;
     position:absolute;
     top:1em;
@@ -168,35 +168,35 @@ h1 {
     transform:translate(-50%,-50%);
 }
 .room {
-    background: url(../img/rooms/room.png) center center no-repeat;
+    background: url(../../img/rooms/room.png) center center no-repeat;
     background-size: cover;
 }
 .room1 {
-    background: url(../img/rooms/room1.jpg) center center no-repeat;
+    background: url(../../img/rooms/room1.jpg) center center no-repeat;
     background-size: cover;
 }
 .room2 {
-    background: url(../img/rooms/room2.jpg) center center no-repeat;
+    background: url(../../img/rooms/room2.jpg) center center no-repeat;
     background-size: cover;
 }
 .room3 {
-    background: url(../img/rooms/room3.jpg) center center no-repeat;
+    background: url(../../img/rooms/room3.jpg) center center no-repeat;
     background-size: cover;
 }
 .room4 {
-    background: url(../img/rooms/room4.jpg) center center no-repeat;
+    background: url(../../img/rooms/room4.jpg) center center no-repeat;
     background-size: cover;
 }
 .room5 {
-    background: url(../img/rooms/room5.jpg) center center no-repeat;
+    background: url(../../img/rooms/room5.jpg) center center no-repeat;
     background-size: cover;
 }
 .treasureRoom {
-    background: url(../img/rooms/treasureRoom.jpg) center center no-repeat;
+    background: url(../../img/rooms/treasureRoom.jpg) center center no-repeat;
     background-size:cover;
 }
 .escape {
-    background: url(../img/rooms/outdoors.jpg) center center no-repeat;
+    background: url(../../img/rooms/outdoors.jpg) center center no-repeat;
     background-size:cover;
     position: fixed;
     top: 0;
@@ -205,7 +205,7 @@ h1 {
     bottom: 0;
 }
 .dead {
-    background: url(../img/rooms/dead.jpg) center center no-repeat;
+    background: url(../../img/rooms/dead.jpg) center center no-repeat;
     background-size:cover;
     height: 100vh;
     position: fixed;
