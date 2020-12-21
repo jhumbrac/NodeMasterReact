@@ -16,7 +16,7 @@ p {
     margin: 1em 0 0;
 }
 #home {
-    background: url(../img/rooms/titleBackground.png);
+    background: url(../../img/rooms/titleBackground.png);
     background-size:cover;
     background-repeat:no-repeat;
     color:#fff;
